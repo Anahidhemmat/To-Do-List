@@ -94,3 +94,36 @@ form {
   text-decoration: line-through;
   opacity: 0.5;
 }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+}
+.select {
+  position: relative;
+  overflow: hidden;
+  margin: 1rem;
+}
+select {
+  padding: 1.1rem;
+  width: 10rem;
+  color: #636fa4;
+  cursor: pointer;
+}
+.select::after {
+  content: "\25BC";
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #636fa4;
+  padding: 1.1rem;
+  transition: all 0.3s ease;
+}
+.select:hover::after {
+  background: #fff;
+  color: #636fa4;
+}
