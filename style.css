@@ -41,3 +41,40 @@ form {
   background: #636fa4;
   cursor: pointer;
 }
+
+.todos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+.todo {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  color: #000;
+  font-size: 2rem;
+}
+.todo li {
+  flex: 1;
+}
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+.complete-btn,
+.trash-btn {
+  border: none;
+  color: #fff;
+  background: #636fa4;
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.complete-btn {
+  background: rgb(73, 204, 73);
+}
