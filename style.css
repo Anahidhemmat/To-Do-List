@@ -59,6 +59,7 @@ form {
   background: #fff;
   color: #000;
   font-size: 2rem;
+  transition: all 0.5s ease;
 }
 .todo li {
   flex: 1;
@@ -66,15 +67,30 @@ form {
 .todo-item {
   padding: 0rem 0.5rem;
 }
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
 .complete-btn,
 .trash-btn {
+  padding: 1rem;
   border: none;
   color: #fff;
   background: #636fa4;
-  font-size: 1.5rem;
-  padding: 1rem;
+  font-size: 1rem;
+
   cursor: pointer;
 }
 .complete-btn {
   background: rgb(73, 204, 73);
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
