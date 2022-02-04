@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(90deg, #e8cbc0, #636fa4);
+  font-family: "Poppins", cursive, monospace;
+  color: #fff;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 2rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-input,
+.todo-btn {
+  font-size: 2rem;
+  border: none;
+  padding: 0.5rem;
+  background: #fff;
+}
+
+.todo-btn {
+  color: #636fa4;
+  transition: all 0.3s ease;
+}
+
+.todo-btn:hover {
+  color: #fff;
+  background: #636fa4;
+  cursor: pointer;
+}
